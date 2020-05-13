@@ -1,9 +1,4 @@
-/**
-* Template Name: Maundy - v2.0.0
-* Template URL: https://bootstrapmade.com/maundy-free-coming-soon-bootstrap-theme/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
 !(function($) {
   "use strict";
 
@@ -32,26 +27,22 @@
     return false;
   });
   
-  btn.disabled = true
+ 
 
   // Formulaire 
 
+  const btn = document.querySelector('button');
+  const text = document.querySelector('.text'); 
+
+  let isVisible = false;
+  console.log(isVisible);
+
+  btn.addEventListener('click', () => {
+    isVisible = !isVisible;
+    console.log(isVisible);
+    isVisible ? text.classList.add('is-visible') : text.classList.remove('is-visible');
+  });
+
   
-  var btn = document.querySelector('input');
-  var txt = document.querySelector('p)')
-
-
-
-  btn.addEventListener('click', updateBtn);
-
-  function updateBtn() {
-    if (btn.value == 'url') {
-      btn.value = 'Analyse';
-      txt.textContent = 'Votre site est performant'
-    } else {
-      btn.value = '';
-      textContent = 'Saisissez un url';
-    }
-  }
   
 })(jQuery);

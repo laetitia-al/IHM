@@ -1,9 +1,3 @@
-/**
-* Template Name: Maundy - v2.0.0
-* Template URL: https://bootstrapmade.com/maundy-free-coming-soon-bootstrap-theme/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
 /*--------------------------------------------------------------
 # General
@@ -165,6 +159,17 @@ h1, h2, h3, h4, h5, h6 {
   text-align: left;
 }
 /* bouton */
+
+.text{
+  display: none;
+}
+
+.text.is-visible{
+  display: block;
+  font-style: bold;
+}
+
+
 input {
   background-color: white;
   border-bottom-width: 80%;
@@ -175,6 +180,7 @@ input {
   font-weight: bold;
   outline: 0;
   color: rgb(90, 111, 126);
+  display: block;
 
 
 }
@@ -184,6 +190,7 @@ input:hover{
   color: white;
   border-color: white;
   outline: 0;
+  display: block;
 }
 
 button {
@@ -196,6 +203,9 @@ button {
   font-weight: bold;
   outline: 0;
   color: rgb(90, 111, 126);
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 
 
 }
@@ -205,6 +215,8 @@ button:hover{
   color: white;
   border-color: white;
   outline: 0;
+  display: block;
+  
 }
 
 
